@@ -1,0 +1,93 @@
+<section class="contact">
+  <div class="modal">
+    <h3 class="modal-caption">Connect</h3>
+    <h2 class="modal-title">Order your unique jewelry</h2>
+    <p class="modal-descr">We'd love to hear more details from you!</p>
+    <address class="contacts">
+      <ul class="contact-list">
+        <li class="contacts-item">
+          <svg class="contacts-icon" width="32" height="32">
+            <use href=""></use>
+          </svg>
+          <p class="contacts-name">Email</p>
+          <a
+            class="contacts-link"
+            href="mailto:info@handmadejewelry.com"
+            target="_blank"
+            rel="noopener noreferer"
+            >info@handmadejewelry.com</a
+          >
+        </li>
+        <li class="contacts-item">
+          <svg class="contacts-icon" width="32" height="32">
+            <use href=""></use>
+          </svg>
+          <p class="contacts-name">Phone</p>
+          <a
+            class="contacts-link"
+            href="tel:+1555000-0000"
+            target="_blank"
+            rel="noopener noreferer"
+            >+1 (555) 000-0000</a
+          >
+        </li>
+        <li class="contacts-item">
+          <svg class="contacts-icon" width="32" height="32">
+            <use href=""></use>
+          </svg>
+          <p class="contacts-name">Office</p>
+          <a
+            class="contacts-link"
+            href="https://www.google.com/search?q=76-8+Oakington+Manor+Dr%2C+London%2C+UK&oq=76-8+Oakington+Manor+Dr%2C+London%2C+UK&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIKCAIQABiABBiiBDIHCAMQABjvBTIHCAQQABjvBdIBBzU2NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+            target="_blank"
+            rel="noopener noreferer"
+            >76-8 Oakington Manor Dr, London, UK</a
+          >
+        </li>
+      </ul>
+    </address>
+    <form class="modal-form" name="reviewForm">
+      <div class="modal-form-field">
+        <label class="modal-form-label" for="user-name">Name*</label>
+        <div class="modal-form-wrapper">
+          <input
+            pattern
+            name="^[a-zA-Z\s\.]{5,28}$"
+            type="text"
+            class="modal-form-input"
+            id="user-name"
+            placeholder="Tony"
+            minlength="3"
+          />
+        </div>
+      </div>
+      <div class="modal-form-field">
+        <label class="modal-form-label" for="phone">Phone*</label>
+        <div class="modal-form-wrapper">
+          <input
+            pattern="^\+[0-9\s]{14}$"
+            type="tel"
+            class="modal-form-input"
+            name="Phone*"
+            id="phone"
+            placeholder="+12345678900"
+            minlength="8"
+          />
+        </div>
+      </div>
+      <div class="modal-form-field textarea">
+        <label class="modal-form-label" for="user-comment"
+          >Describe what you want</label
+        >
+        <textarea
+          class="modal-form-comment"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Type your message..."
+          maxlength="500"
+        ></textarea>
+      </div>
+      <button class="modal-btn-submit" type="submit" disabled>Submit</button>
+    </form>
+  </div>
+</section>
