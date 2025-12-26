@@ -1,0 +1,13 @@
+@media (hover: hover) {
+  .benefit-item:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+}
+@media (max-width: 768px) {
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
