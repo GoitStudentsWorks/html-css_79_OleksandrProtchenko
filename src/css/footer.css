@@ -27,7 +27,7 @@ margin-bottom: 32px;
 
 .footer-list-wraper {}
 
-.social-list {
+.footer-social-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +74,7 @@ margin-bottom: 32px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-bottom-text {
+.footer-copyright {
     font-weight: 400;
         font-size: 14px;
         line-height: 150%;
