@@ -1,0 +1,1 @@
+burgerBtn.classList.toggle('active');
