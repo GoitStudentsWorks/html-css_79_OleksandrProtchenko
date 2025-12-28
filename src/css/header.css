@@ -18,11 +18,11 @@
 .close-btn-svg {
   display: none;
 }
-button:active .burger-btn-svg {
+.burger-btn.active .burger-btn-svg {
   display: none;
   opacity: 0;
 }
-button:active .close-btn-svg {
+.burger-btn.active .close-btn-svg {
   display: inline;
   opacity: 1;
 }
@@ -41,7 +41,7 @@ a {
   background-color: var(--white-color);
   padding-top: 16px;
   transform: translateY(200%);
-  transition: transform 250ms;
+  transition: var(--transition);
 }
 .is-open {
   transform: translateY(0);
