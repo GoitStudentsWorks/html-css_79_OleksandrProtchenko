@@ -16,8 +16,6 @@
 .testimonials-description {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   text-align: center;
   color: var(--main-color);
   margin-bottom: 40px;
@@ -43,23 +41,23 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 32px;
   width: 335px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .testimonials-rate {
 }
 .testimonials-icon {
 }
 .testimonials-text {
-  margin: 24px 0;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
   color: var(--main-color);
+  margin: 0;
 }
 .testimonials-author {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
   color: var(--main-color);
 }
