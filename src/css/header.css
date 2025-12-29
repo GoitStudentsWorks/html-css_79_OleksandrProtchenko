@@ -5,7 +5,6 @@
 }
 .nav {
   display: flex;
-  max-height: 72px;
 }
 .header-logo-icon {
   margin-top: 2px;
