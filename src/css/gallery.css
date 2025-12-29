@@ -1,7 +1,6 @@
 .gallery{
   padding: 64px 0;
 }
-
 .gallery-title {
   font-family: var(--second-family);
   font-size: 36px;
@@ -10,14 +9,12 @@
   text-align: center;
   margin-bottom: 24px;
 }
-
 .gallery-descr{
   font-family: var(--font-family);
   font-size: 18px;
   text-align: center;
   margin-bottom: 40px;
 }
-
 .gallery-list{
   display: flex;
   flex-direction: column;
@@ -28,7 +25,6 @@
   .gallery-image{
     object-fit:  contain;
   }
-
   .gallery-descr{
     margin-bottom: 80px;
   }
