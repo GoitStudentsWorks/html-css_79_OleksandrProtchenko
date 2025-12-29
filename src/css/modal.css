@@ -42,7 +42,7 @@
   border: none;
   background-color: var(--accent-color);
   font-weight: var(--font-md);
-  width: 335px
+  width: 335px;
   min-height: 35px;
   margin-bottom: 24px;
   padding: 0;
@@ -56,4 +56,5 @@
   background-color: var(--accent-color);
   box-shadow: var(--btn-shadow);
 }
+
 
