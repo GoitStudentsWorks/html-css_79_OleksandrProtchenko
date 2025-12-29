@@ -20,7 +20,6 @@
 .gallery-list{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap:16px;
 }
 
@@ -31,6 +30,7 @@
   .gallery-list{
     height: 626px;
     gap: 24px;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
