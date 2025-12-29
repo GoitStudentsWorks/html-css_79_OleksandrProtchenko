@@ -1,0 +1,25 @@
+.gallery{
+  padding: 64px 0;
+}
+
+.gallery-title {
+  font-family: var(--second-family);
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: var(--title-ls);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.gallery-descr{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery-list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:16px;
+}
