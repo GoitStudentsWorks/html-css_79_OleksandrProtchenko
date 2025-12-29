@@ -3,9 +3,61 @@
     <div class="footer-list-wraper">
       <div class="footer-logo-social-wraper">
         <a href="index.html" class="footer-logo">
-          <svg class="footer-logo-icon" width="217" height="93">
-            <use href="../img/footer/logo-footer.svg"></use>
-          </svg>
+          <picture>
+            <!-- mobile set -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/footer/logo_mb.webp    1x,
+                ../img/footer/logo_mb@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/footer/logo_mb.png    1x,
+                ../img/footer/logo_mb@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- Tablet set -->
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ../img/footer/logo_tab.webp    1x,
+                ../img/footer/logo_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ../img/footer/logo_tab.png    1x,
+                ../img/footer/logo_tab@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- Desktop set -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ../img/footer/logo_desk.webp    1x,
+                ../img/footer/logo_desk@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ../img/footer/logo_desk.png    1x,
+                ../img/footer/logo_desk@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <img src="../img/footer/logo_mb.png" alt="" />
+          </picture>
         </a>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -48,7 +100,7 @@
       <nav class="footer-nav">
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
-            <a href="" class="footer-nav-link">About us</a>
+            <a href="#" class="footer-nav-link">About us</a>
           </li>
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Benefits</a>
