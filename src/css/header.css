@@ -58,7 +58,6 @@ a {
   padding-bottom: 24px;
 }
 .modal-link {
-  font-weight: 400;
   transition: var(--transition);
 }
 .modal-link:hover,
