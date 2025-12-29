@@ -25,6 +25,10 @@
 }
 
 @media (min-width: 768px){
+  .gallery-image{
+    object-fit:  contain;
+  }
+
   .gallery-descr{
     margin-bottom: 80px;
   }
@@ -41,7 +45,7 @@
     font-size:  48px;
   }
   .gallery-list{
+    height: 1098px;
     gap: 32px;
-
   }
 }
