@@ -23,3 +23,14 @@
   flex-wrap: wrap;
   gap:16px;
 }
+
+@media (min-width: 768px){
+  .gallery-descr{
+    margin-bottom: 80px;
+  }
+  .gallery-list{
+    height: 626px;
+    gap: 24px;
+    justify-content: space-between;
+  }
+}
