@@ -1,9 +1,6 @@
-.container {
-}
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/hero/hero_sm@1x.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     image-set(
       url('../img/hero/web-hero/hero_sm@1x.webp') 1x,
       url('../img/hero/web-hero/hero_sm@2x.webp') 2x,
@@ -13,31 +10,37 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 160px 0 152px;
+padding: 160px 0 152px;
 }
-.hero-container{
+
+.hero-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 32px;
+  align-items: flex-start;
 }
 
 .hero-title {
   font-family: var(--second-family);
+  font-weight: 400;
   font-size: 40px;
   line-height: var(--main-title-lh);
   letter-spacing: var(--title-ls);
   color: var(--white-color);
 }
+
 .hero-text {
+
   font-size: 18px;
   color: var(--white-color);
 }
+
 .hero-content {
   display: flex;
-flex-direction: column;
-gap: 24px;
+  flex-direction: column;
+  gap: 24px;
 }
+
 .hero-btn {
   border: none;
   background-color: var(--accent-color);
@@ -46,10 +49,12 @@ gap: 24px;
   padding: 6px 12px;
   transition: var(--transition);
 }
+
 .hero-btn:focus {
   background-color: var(--white-color);
   border: 1px solid var(--accent-color);
 }
+
 .hero-btn:active {
   background-color: var(--accent-color);
   box-shadow: var(--btn-shadow);
@@ -64,17 +69,20 @@ gap: 24px;
 
 @media (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../img/hero/hero_md@1x.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       image-set(
         url('../img/hero/web-hero/hero_md@1x.webp') 1x,
         url('../img/hero/web-hero/hero_md@2x.webp') 2x,
         url('../img/hero/hero_md@1x.jpg') 1x,
         url('../img/hero/hero_md@2x.jpg') 2x
       );
-    padding: 160px 0 435px;
+      padding: 160px 0;
   }
+  .hero-container{
+    min-height: 544px;
+  }
+
   .hero-content {
     max-width: 513px;
   }
@@ -86,7 +94,8 @@ gap: 24px;
 
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../img/hero/hero_md@2x.jpg');
   }
 }
