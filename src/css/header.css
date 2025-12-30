@@ -3,8 +3,11 @@
   display: flex;
   min-height: 72px;
 }
-.nav {
-  display: flex;
+.nav-list {
+  display: none;
+}
+.nav-btn {
+  display: none;
 }
 .header-logo-icon {
   margin-top: 2px;
@@ -26,4 +29,46 @@
 .burger-btn.active .close-btn-svg {
   display: inline;
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-right: 32px;
+  }
+  .nav {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto 0 auto;
+  }
+  .header-logo-icon {
+    margin-top: 18px;
+  }
+  .burger-btn {
+    display: none;
+  }
+  .nav-list {
+    display: inline-flex;
+    gap: 16px;
+  }
+  .nav-btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    border: none;
+    width: 119px;
+    height: 36px;
+    padding: 0;
+    margin-top: 18px;
+  }
+  .nav-btn:focus {
+    background-color: var(--white-color);
+    border: 1px solid var(--accent-color);
+  }
+  .nav-btn:active {
+    background-color: var(--accent-color);
+    box-shadow: var(--btn-shadow);
+  }
+  .header-logo-icon {
+    width: 84px;
+    height: 36px;
+  }
 }
