@@ -1,11 +1,16 @@
-
+.about {
+  padding: 56px 0;
+}
 .about-img {
-  padding-top: 56px;
   margin-bottom: 32px;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .about-title {
-  margin-bottom: 24px;
   font-family: var(--second-family);
   font-size: 36px;
   line-height: var(--main-title-lh);
@@ -13,7 +18,6 @@
   color: var(--main-color);
 }
 .about-text {
-  font-family: var(--font-family);
   font-size: 18px;
   color: var(--main-color);
   margin-bottom: 24px;
@@ -22,13 +26,12 @@
   display: flex;
   gap: 24px;
   flex-direction: column;
-  font-family: var(--font-family);
   font-weight: var(--font-b);
   font-size: 18px;
   color: var(--main-color);
-  padding-bottom: 56px;
 }
 .about-item {
+  font-weight: var(--font-b);
   position: relative;
   padding-left: 32px;
 }
