@@ -38,7 +38,7 @@
   .nav {
     display: inline-flex;
     align-items: center;
-    margin: 0 auto 0 auto;
+    margin-left: auto;
   }
   .header-logo-icon {
     margin-top: 18px;
@@ -58,6 +58,7 @@
     height: 36px;
     padding: 0;
     margin-top: 18px;
+    margin-left: auto;
   }
   .nav-btn:focus {
     background-color: var(--white-color);
