@@ -37,3 +37,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+blockquote {
+  font: inherit;
+  margin: 0;
+}

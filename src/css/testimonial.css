@@ -1,21 +1,17 @@
-.container {
-  max-width: 375px;
-  padding: 64px 20px;
-  margin: 0 auto;
+.testimonials {
+  padding: 64px 0;
 }
 .testimonials-title {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  line-height: var(--main-title-lh);
+  letter-spacing: var(--title-ls);
   text-align: center;
   color: var(--main-color);
   margin-bottom: 24px;
 }
 .testimonials-description {
-  font-family: var(--font-family);
-  font-weight: 400;
   text-align: center;
   color: var(--main-color);
   margin-bottom: 40px;
@@ -23,6 +19,7 @@
 .testimonials-list {
   display: flex;
   flex-direction: column;
+  align-content: center;
   gap: 24px;
 }
 .testimonials-item {
@@ -30,17 +27,11 @@
   flex-direction: column;
   gap: 24px;
 }
-.testimonials-image {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  width: 335px;
-  height: 260px;
-  object-fit: cover;
-}
 .testimonials-content {
   background-color: #f2f2f2;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 32px;
-  width: 335px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -50,14 +41,10 @@
 .testimonials-icon {
 }
 .testimonials-text {
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 18px;
   color: var(--main-color);
-  margin: 0;
 }
 .testimonials-author {
-  font-family: var(--font-family);
-  font-weight: 600;
+  font-weight: var(--font-sb);
   color: var(--main-color);
 }
