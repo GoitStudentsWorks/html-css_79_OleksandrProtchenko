@@ -1,1 +1,29 @@
-
+.header-container {
+  padding-right: 0;
+  display: flex;
+  min-height: 72px;
+}
+.nav {
+  display: flex;
+}
+.header-logo-icon {
+  margin-top: 2px;
+}
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 12px;
+  margin: 12px 12px 12px auto;
+  transition: var(--transition);
+}
+.close-btn-svg {
+  display: none;
+}
+.burger-btn.active .burger-btn-svg {
+  display: none;
+  opacity: 0;
+}
+.burger-btn.active .close-btn-svg {
+  display: inline;
+  opacity: 1;
+}
