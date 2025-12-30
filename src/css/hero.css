@@ -14,13 +14,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.hero-container {
   padding: 160px 0 152px;
-max-width: 335px;
-
 }
+
+
 .hero-title {
   font-family: var(--second-family);
 font-size: 40px;
@@ -36,13 +33,12 @@ color: var(--white-color);
 margin-bottom: 32px;
 }
 .hero-btn {
- display: inline-block;
   border: none;
   background-color: var(--accent-color);
   font-weight: var(--font-md);
   width: 335px;
-  min-height: 35px;
-  padding: 0;
+padding: 6px 0;
+
   transition: var(--transition);
 }
 .hero-btn:focus
