@@ -1,0 +1,126 @@
+.contacts {
+  padding: 64px 0;
+}
+.contact-caption {
+  margin-bottom: 48px;
+}
+.contact-subtitle {
+  font-weight: var(--font-sb);
+  margin-bottom: 16px;
+}
+.contact-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: var(--main-title-lh);
+  letter-spacing: var(--title-ls);
+  margin-bottom: 24px;
+}
+.contact-descr {
+  font-family: var(--second-family);
+  font-size: 18px;
+}
+.contact {
+  font-style: normal;
+  margin-bottom: 32px;
+}
+.contact-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact-icon {
+  margin-bottom: 16px;
+}
+.contact-link-name {
+  font-family: var(--second-family);
+  font-size: 20px;
+  line-height: var(--small-title-lh);
+  letter-spacing: var(--title-ls);
+  margin-bottom: 8px;
+}
+.contact-link {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: var(--transition);
+}
+.contact-link:focus {
+  text-decoration: underline;
+}
+.contact-link:active {
+  color: var(--link-activ-color);
+}
+.contact-form-field {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 24px;
+  gap: 24px;
+}
+.contact-form-label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.contact-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0);
+  padding: 8px 12px;
+}
+
+.contact-form-input:focus {
+  border: 1px solid var(--accent-color);
+  outline: transparent;
+}
+.contact-form-comment:focus {
+  border: 1px solid var(--accent-color);
+  outline: transparent;
+}
+.contact-form-comment {
+  width: 100%;
+  min-height: 180px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 12px 12px 144px;
+}
+.contact-form-input::placeholder,
+.contact-form-comment::placeholder {
+  color: var(--form-placeholder-color);
+}
+.form-btn {
+  text-align: center;
+  width: 100%;
+  height: 36px;
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+  transition: var(--transition);
+  padding: 6px 12px;
+}
+.form-btn:active {
+  box-shadow: var(--btn-shadow);
+  background: var(--accent-color);
+}
+
+.form-btn:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.form-btn.inactive {
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+}
+@media (hover: hover) {
+  .contact-link:hover {
+    text-decoration-color: currentColor;
+  }
+  .form-btn:hover {
+    border: 1px solid var(--accent-color);
+    background-color: var(--white-color);
+  }
+  .form-btn:active {
+    background: var(--accent-color);
+  }
+}
