@@ -1,0 +1,56 @@
+
+.about-img {
+  padding-top: 56px;
+  margin-bottom: 32px;
+}
+
+.about-title {
+  margin-bottom: 24px;
+  font-family: var(--second-family);
+  font-size: 36px;
+  line-height: var(--main-title-lh);
+  letter-spacing: var(--title-ls);
+  color: var(--main-color);
+}
+.about-text {
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: var(--main-color);
+  margin-bottom: 24px;
+}
+.about-list {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-weight: var(--font-b);
+  font-size: 18px;
+  color: var(--main-color);
+  padding-bottom: 56px;
+}
+.about-item {
+  position: relative;
+  padding-left: 32px;
+}
+.about-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-item:nth-child(1)::before {
+  background-image: url('../img/icons-about/leaf.svg');
+}
+
+.about-item:nth-child(2)::before {
+  background-image: url('../img/icons-about/donate-heart.svg');
+}
+
+.about-item:nth-child(3)::before {
+  background-image: url('../img/icons-about/book.svg');
+}
