@@ -84,7 +84,7 @@
   width: 100%;
   min-height: 180px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 12px 12px 144px;
+  padding: 12px;
 }
 .contact-form-input::placeholder,
 .contact-form-comment::placeholder {
@@ -97,7 +97,7 @@
   border: 1px solid var(--accent-color);
   background: var(--accent-color);
   transition: var(--transition);
-  padding: 6px 12px;
+  padding: 6px;
 }
 .form-btn:active {
   box-shadow: var(--btn-shadow);
