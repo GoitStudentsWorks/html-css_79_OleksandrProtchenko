@@ -1,9 +1,7 @@
 .header-container {
   display: flex;
-  padding: 0 24px;
-}
-.header {
   height: 72px;
+  padding: 0 24px;
 }
 .header-logo-link {
   max-height: 68px;
