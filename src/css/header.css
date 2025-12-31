@@ -1,7 +1,9 @@
 .header-container {
-  padding-right: 0;
   display: flex;
-  min-height: 72px;
+  padding: 0 24px;
+}
+.header-logo-link {
+  max-height: 68px;
 }
 .nav-list {
   display: none;
@@ -9,15 +11,12 @@
 .nav-btn {
   display: none;
 }
-.header-logo-icon {
-  margin-top: 2px;
-}
 .burger-btn {
   background-color: transparent;
   border: none;
-  padding: 12px;
-  margin: 12px 12px 12px auto;
+  margin-left: auto;
   transition: var(--transition);
+  padding: 0;
 }
 .close-btn-svg {
   display: none;
@@ -33,15 +32,14 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    padding-right: 32px;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
   }
   .nav {
     display: inline-flex;
     align-items: center;
     margin-left: auto;
-  }
-  .header-logo-icon {
-    margin-top: 18px;
   }
   .burger-btn {
     display: none;
@@ -55,9 +53,7 @@
     background-color: var(--accent-color);
     border: none;
     width: 119px;
-    height: 36px;
-    padding: 0;
-    margin-top: 18px;
+    padding: 6px 0;
     margin-left: auto;
   }
   .nav-btn:focus {
@@ -71,5 +67,10 @@
   .header-logo-icon {
     width: 84px;
     height: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav-list {
+    margin-left: 78px;
   }
 }
