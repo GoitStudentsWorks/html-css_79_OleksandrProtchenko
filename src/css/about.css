@@ -21,7 +21,6 @@
 .about-text {
   font-size: 18px;
   color: var(--main-color);
-  margin-bottom: 24px;
 }
 .about-list {
   display: flex;
