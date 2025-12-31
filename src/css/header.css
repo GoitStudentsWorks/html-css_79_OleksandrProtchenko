@@ -2,6 +2,9 @@
   display: flex;
   padding: 0 24px;
 }
+.header {
+  height: 72px;
+}
 .header-logo-link {
   max-height: 68px;
 }
@@ -32,7 +35,7 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    padding: 18px 32px;
+    padding: 15px 32px;
     display: flex;
     align-items: center;
   }
@@ -53,10 +56,11 @@
     background-color: var(--accent-color);
     border: none;
     width: 119px;
-    padding: 6px 0;
+    padding: 8px 0;
     margin-left: auto;
   }
-  .nav-btn:focus {
+  .nav-btn:focus,
+  .nav-btn:hover {
     background-color: var(--white-color);
     border: 1px solid var(--accent-color);
   }
@@ -70,7 +74,14 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .nav-list {
-    margin-left: 78px;
+  .header-container {
+    display: flex;
+    padding: 15px 64px;
+  }
+  .nav {
+    margin-left: 32px;
+  }
+  .nav-btn {
+    width: 192px;
   }
 }
