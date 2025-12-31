@@ -71,10 +71,10 @@
   background: rgba(255, 255, 255, 0);
   padding: 8px 12px;
 }
-  .contact-form-label {
-    display: inline-block;
-    margin-bottom: 8px;
-  }
+.contact-form-label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
 .contact-form-input:focus {
   border: 1px solid var(--accent-color);
   outline: transparent;
@@ -138,13 +138,15 @@
   .contact-item {
     max-width: 100%;
     text-align: left;
+    width: calc((100% - 50px) / 3);
   }
   .form-label-wrapper {
     width: 100%;
   }
   .form-btn {
-  align-items: flex-start;
-  width: 249px;
-  height: 36px;
+    align-items: flex-start;
+    width: 249px;
+    height: 36px;
+  }
 }
-}
+
