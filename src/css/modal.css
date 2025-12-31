@@ -56,5 +56,8 @@
   background-color: var(--accent-color);
   box-shadow: var(--btn-shadow);
 }
-
-
+@media screen and (min-width: 768px) {
+  .modal {
+    display: none;
+  }
+}
