@@ -1,5 +1,6 @@
 .about {
   padding: 56px 0;
+
 }
 .about-img {
   margin-bottom: 32px;
@@ -12,6 +13,7 @@
 
 .about-title {
   font-family: var(--second-family);
+  font-weight: 400;
   font-size: 36px;
   line-height: var(--main-title-lh);
   letter-spacing: var(--title-ls);
@@ -20,7 +22,6 @@
 .about-text {
   font-size: 18px;
   color: var(--main-color);
-  margin-bottom: 24px;
 }
 .about-list {
   display: flex;
@@ -56,4 +57,11 @@
 
 .about-item:nth-child(3)::before {
   background-image: url('../img/icons-about/book.svg');
+}
+@media (min-width: 768px){
+
+.about {
+  padding: 112px 0;
+}
+
 }
