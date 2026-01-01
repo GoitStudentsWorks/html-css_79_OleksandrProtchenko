@@ -110,6 +110,8 @@ padding: 160px 0 152px;
         url('../img/hero/desktop/hero_lg@2x.jpg') 2x
       );
       padding: 224px 0;
+      max-width: 1440px;
+      margin: 0 auto;
   }
 
   .hero-container{
