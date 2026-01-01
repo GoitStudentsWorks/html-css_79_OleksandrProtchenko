@@ -4,6 +4,7 @@
   --font-md: 500;
   --font-sb: 600;
   --font-b: 700;
+  --main-font-size: 16px;
   --main-title-lh: 1.2;
   --small-title-lh: 1.4;
   --title-ls: -0.01em;
@@ -20,7 +21,8 @@
 body {
   min-width: 100vw;
   min-height: 100vh;
-  font-size: 16px;
+  font-size: var(--main-font-size);
+  color: var(--main-color);
   line-height: 1.5;
   background-color: var(--white-color);
   font-family: var(--font-family);
