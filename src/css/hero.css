@@ -2,10 +2,10 @@
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     image-set(
-      url('../img/hero/web-hero/hero_sm@1x.webp') 1x,
-      url('../img/hero/web-hero/hero_sm@2x.webp') 2x,
-      url('../img/hero/hero_sm@1x.jpg') 1x,
-      url('../img/hero/hero_sm@2x.jpg') 2x
+      url('../img/hero/mobile/webp/hero_sm@1x.webp') 1x,
+      url('../img/hero/mobile/webp/hero_sm@2x.webp') 2x,
+      url('../img/hero/mobile/hero_sm@1x.jpg') 1x,
+      url('../img/hero/mobile/hero_sm@2x.jpg') 2x
     );
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,10 +72,10 @@ padding: 160px 0 152px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       image-set(
-        url('../img/hero/web-hero/hero_md@1x.webp') 1x,
-        url('../img/hero/web-hero/hero_md@2x.webp') 2x,
-        url('../img/hero/hero_md@1x.jpg') 1x,
-        url('../img/hero/hero_md@2x.jpg') 2x
+        url('../img/hero/tablet/webp/hero_md@1x.webp') 1x,
+        url('../img/hero/tablet/webp/hero_md@2x.webp') 2x,
+        url('../img/hero/tablet/hero_md@1x.jpg') 1x,
+        url('../img/hero/tablet/hero_md@2x.jpg') 2x
       );
       padding: 160px 0;
   }
@@ -96,6 +96,37 @@ padding: 160px 0 152px;
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../img/hero/hero_md@2x.jpg');
+      url('../img/hero/tablet/hero_md@2x.jpg');
   }
+}
+@media (min-width: 1440px) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      image-set(
+        url('../img/hero/desktop/webp/hero_lg@1x.webp') 1x,
+        url('../img/hero/desktop/webp/hero_lg@2x.webp') 2x,
+        url('../img/hero/desktop/hero_lg@1x.jpg') 1x,
+        url('../img/hero/desktop/hero_lg@2x.jpg') 2x
+      );
+      padding: 224px 0;
+      max-width: 1440px;
+      margin: 0 auto;
+  }
+
+  .hero-container{
+    min-height: 416px;
+  }
+
+  .hero-content {
+    max-width: 640px;
+  }
+
+  .hero-btn {
+    width: 192px;
+  }
+  .hero-title{
+    font-size: 56px;
+  }
+
 }
