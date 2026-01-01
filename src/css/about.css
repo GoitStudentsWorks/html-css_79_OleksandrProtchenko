@@ -1,6 +1,5 @@
 .about {
   padding: 56px 0;
-
 }
 .about-img {
   margin-bottom: 32px;
@@ -58,10 +57,27 @@
 .about-item:nth-child(3)::before {
   background-image: url('../img/icons-about/book.svg');
 }
-@media (min-width: 768px){
-
-.about {
-  padding: 112px 0;
+@media (min-width: 768px) {
+  .about {
+    padding: 112px 0;
+  }
 }
+@media (min-width: 1440px) {
 
+  .about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .about-content {
+    flex: 1;
+    }
+.about-img {
+  margin-bottom: 0;
 }
+.about-title {
+  font-size: 48px;
+}
+  }
+
