@@ -23,7 +23,12 @@ a {
   color: currentColor;
   text-decoration: none;
 }
-
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
 button {
   cursor: pointer;
 }
