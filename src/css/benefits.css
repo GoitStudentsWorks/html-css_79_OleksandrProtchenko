@@ -35,5 +35,19 @@
   line-height: var(--small-title-lh);
   letter-spacing: var(--title-ls);
 }
-.benefits-item-descr {
+@media screen and (min-width: 1440px) {
+  .benefits-container {
+    align-items: center;
+  }
+  .benefits-title {
+    max-width: 870px;
+    font-size: 40px;
+  }
+  .benefits-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .benefits-list-item {
+    flex: 1;
+  }
 }
