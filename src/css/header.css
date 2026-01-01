@@ -41,7 +41,6 @@
     gap: 48.5px;
   }
   .nav {
-    align-items: center;
     display: flex;
   }
   .burger-btn {
