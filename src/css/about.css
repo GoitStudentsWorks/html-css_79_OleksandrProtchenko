@@ -66,12 +66,12 @@
 
   .about-wrapper {
     display: flex;
-    align-items: center;
     gap: 32px;
   }
 
   .about-content {
     flex: 1;
+    padding: 27.5px 0;
     }
 .about-img {
   margin-bottom: 0;
