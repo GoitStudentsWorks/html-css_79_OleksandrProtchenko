@@ -3,7 +3,10 @@
   padding: 0 24px;
 }
 .header {
-  height: 72px;
+  min-height: 72px;
+}
+.nav {
+  flex-grow: 1;
 }
 .header-logo-link {
   max-height: 68px;
@@ -17,7 +20,6 @@
 .burger-btn {
   background-color: transparent;
   border: none;
-  margin-left: auto;
   transition: var(--transition);
   padding: 0;
 }
@@ -38,26 +40,26 @@
     padding: 15px 32px;
     display: flex;
     align-items: center;
+    gap: 48.5px;
   }
   .nav {
-    display: inline-flex;
     align-items: center;
-    margin-left: auto;
   }
   .burger-btn {
     display: none;
   }
   .nav-list {
-    display: inline-flex;
+    display: flex;
     gap: 16px;
+    flex-wrap: wrap;
   }
   .nav-btn {
-    display: inline-block;
+    display: block;
     background-color: var(--accent-color);
     border: none;
     width: 119px;
-    padding: 8px 0;
-    margin-left: auto;
+    padding: 6px 0;
+    font-weight: var(--font-md);
   }
   .nav-btn:focus,
   .nav-btn:hover {
@@ -77,9 +79,7 @@
   .header-container {
     display: flex;
     padding: 15px 64px;
-  }
-  .nav {
-    margin-left: 32px;
+    gap: 32px;
   }
   .nav-btn {
     width: 192px;
