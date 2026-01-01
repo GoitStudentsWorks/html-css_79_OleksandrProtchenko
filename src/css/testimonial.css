@@ -61,7 +61,7 @@
     flex-direction: row;
   }
   .testimonials-content {
-    gap: 41px;
+    justify-content: space-between;
   }
   .testimonials-image,
   .testimonials-content {
