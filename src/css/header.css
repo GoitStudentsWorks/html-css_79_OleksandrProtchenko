@@ -1,17 +1,15 @@
 .header-container {
   display: flex;
   padding: 0 24px;
+  justify-content: space-between;
 }
 .header {
   min-height: 72px;
 }
-.nav {
-  flex-grow: 1;
-}
 .header-logo-link {
   max-height: 68px;
 }
-.nav-list {
+.nav {
   display: none;
 }
 .nav-btn {
@@ -44,6 +42,7 @@
   }
   .nav {
     align-items: center;
+    display: flex;
   }
   .burger-btn {
     display: none;
@@ -80,6 +79,9 @@
     display: flex;
     padding: 15px 64px;
     gap: 32px;
+  }
+  .nav {
+    flex-grow: 1;
   }
   .nav-btn {
     width: 192px;
