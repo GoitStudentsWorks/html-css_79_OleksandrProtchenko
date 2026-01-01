@@ -68,3 +68,11 @@
     flex: 1;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .testimonials-item {
+    gap: 32px;
+  }
+  .testimonials-content {
+    width: 640px;
+  }
+}
