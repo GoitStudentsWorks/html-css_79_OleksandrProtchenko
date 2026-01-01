@@ -31,14 +31,18 @@
   background-color: #f2f2f2;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 32px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 .testimonials-rate {
-}
-.testimonials-icon {
+  display: flex;
+  gap: 4px;
 }
 .testimonials-text {
   font-size: 18px;
@@ -47,4 +51,28 @@
 .testimonials-author {
   font-weight: var(--font-sb);
   color: var(--main-color);
+}
+@media (min-width: 768px) {
+  .testimonials-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .testimonials-item {
+    flex-direction: row;
+  }
+  .testimonials-content {
+    justify-content: space-between;
+  }
+  .testimonials-image,
+  .testimonials-content {
+    flex: 1;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .testimonials-item {
+    gap: 32px;
+  }
+  .testimonials-content {
+    width: 640px;
+  }
 }
