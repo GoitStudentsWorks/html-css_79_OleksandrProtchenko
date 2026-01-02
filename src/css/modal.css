@@ -10,7 +10,8 @@
   background-color: var(--white-color);
   padding-top: 16px;
   transform: translateY(-100%);
-  transition: var(--transition);
+  transition: transform var(--transition), opacity var(--transition),
+    visibility var(--transition);
 }
 .modal.is-open {
   transform: translateY(0);
@@ -24,14 +25,19 @@
   flex-direction: column;
   gap: 64px;
 }
-
 .modal-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.modal-item:focus .modal-link {
+.modal-link {
+  outline: transparent;
   text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color var(--transition), color var(--transition);
+}
+.modal-item:focus .modal-link {
+  text-decoration-color: currentColor;
 }
 .modal-item:active .modal-link {
   color: var(--link-active-color);
@@ -40,13 +46,11 @@
 .modal-btn {
   text-align: center;
 }
-/* .modal-btn:focus {
-  background-color: white;
+@media (hover: hover) {
+  .modal-item:hover .modal-link {
+    text-decoration-color: currentColor;
+  }
 }
-.modal-btn:active {
-  background-color: var(--accent-color);
-  box-shadow: var(--btn-shadow);
-} */
 @media (min-width: 768px) {
   .modal {
     display: none;

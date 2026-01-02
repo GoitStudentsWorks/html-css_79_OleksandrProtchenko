@@ -11,13 +11,6 @@
   background-position: center;
   padding: 160px 0 152px;
 }
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: flex-start;
-}
 .hero-title {
   font-family: var(--second-family);
   font-weight: 400;
@@ -31,9 +24,10 @@
   color: var(--white-color);
 }
 .hero-content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  margin-bottom: 32px;
+}
+.hero-title {
+  margin-bottom: 24px;
 }
 .hero-btn {
   text-align: center;
