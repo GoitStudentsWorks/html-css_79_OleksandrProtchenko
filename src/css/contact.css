@@ -108,6 +108,7 @@
   min-height: 180px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 12px;
+  resize: none;
 }
 .contact-form-input::placeholder,
 .contact-form-comment::placeholder {

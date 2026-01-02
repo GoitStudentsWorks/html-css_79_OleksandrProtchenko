@@ -72,7 +72,7 @@
 /* Tablet media */
 @media (min-width: 768px) {
   .footer-container {
-    padding: 80px 64px;
+    padding: 0px 64px;
   }
   .footer-social-wrapper {
     gap: 58px;
