@@ -27,9 +27,16 @@ header {
   justify-content: center;
   background-color: transparent;
   border: transparent;
+  cursor: pointer;
 }
 .nav {
   display: none;
+}
+.nav-link {
+  outline: transparent;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color var(--transition), color var(--transition);
 }
 .nav-btn {
   display: none;
@@ -47,15 +54,8 @@ header {
   opacity: 1;
 }
 @media (hover: hover) {
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  .nav-item:hover {
-    text-decoration: underline;
-  }
-  .nav-btn:hover {
-    background-color: var(--white-color);
-    border-color: var(--accent-color);
+  .nav-item:hover .nav-link {
+    text-decoration-color: currentColor;
   }
 }
 @media (min-width: 768px) {
@@ -80,20 +80,17 @@ header {
     gap: 16px;
     flex-wrap: wrap;
   }
-  .nav-link:focus {
-    text-decoration: underline;
+  .nav-item:focus .nav-link {
+    text-decoration-color: currentColor;
+  }
+  .nav-item:active .nav-link {
+    color: var(--link-active-color);
+    text-decoration: none;
   }
   .nav-btn {
     display: block;
     width: 119px;
     text-align: center;
-  }
-  .nav-btn:focus {
-    background-color: var(--white-color);
-  }
-  .nav-btn:active {
-    background-color: var(--accent-color);
-    box-shadow: var(--btn-shadow);
   }
 }
 @media (min-width: 1440px) {

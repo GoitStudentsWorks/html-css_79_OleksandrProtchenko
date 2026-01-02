@@ -1,14 +1,12 @@
 .contacts {
   padding: 64px 0;
 }
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
 .contact-subtitle {
   font-weight: var(--font-sb);
   margin-bottom: 16px;
+}
+.contact-caption {
+  margin-bottom: 48px;
 }
 .contact-title {
   font-family: var(--second-family);
@@ -51,27 +49,29 @@
   display: block;
   text-decoration: underline;
   text-decoration-color: transparent;
-  transition: var(--transition);
+  transition: text-decoration var(--transition), color var(--transition);
 }
 .contact-link:focus {
   text-decoration: underline;
 }
 .contact-link:active {
   color: var(--link-active-color);
+  text-decoration: none;
 }
 .contact-form-field {
+  margin-bottom: 24px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  margin-bottom: 24px;
   gap: 24px;
 }
 .form-label-wrapper {
   width: 100%;
+  transition: border-color var(--transition), color var(--transition);
 }
 .contact-form-label {
-  display: inline-block;
+  display: block;
   margin-bottom: 8px;
 }
 .contact-form-input {
@@ -102,7 +102,6 @@
   border: 1px solid var(--accent-color);
   outline: transparent;
 }
-
 .contact-form-comment {
   width: 100%;
   min-height: 180px;
@@ -117,7 +116,6 @@
 .contact-btn {
   width: 100%;
 }
-
 @media (hover: hover) {
   .contact-link:hover {
     text-decoration-color: currentColor;
@@ -150,16 +148,14 @@
     flex-direction: row-reverse;
     gap: 32px;
   }
-  .contact-desk-width {
+  .contact-desk-width,
+  .contact-item {
     width: calc((100% - 32px) / 2);
   }
   .contact-list {
     width: 100%;
     gap: 32px;
     flex-wrap: wrap;
-  }
-  .contact-item {
-    width: calc((100% - 32px) / 2);
   }
   .contact-btn {
     width: 192px;
