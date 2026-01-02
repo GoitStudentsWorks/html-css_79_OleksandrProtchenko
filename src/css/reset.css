@@ -22,15 +22,13 @@ ol {
 a {
   color: currentColor;
   text-decoration: none;
+  outline: transparent;
 }
 input,
 textarea,
 select,
 button {
   font: inherit;
-}
-button {
-  cursor: pointer;
 }
 
 img {

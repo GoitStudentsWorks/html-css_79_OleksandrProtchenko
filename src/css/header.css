@@ -1,13 +1,32 @@
-.header-container {
-  display: flex;
-  padding: 0 24px;
-  justify-content: space-between;
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--white-color);
 }
-.header {
-  min-height: 72px;
+.header-container {
+  padding: 13px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo-icon {
+  width: 149px;
+  height: auto;
 }
 .header-logo-link {
-  max-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: transparent;
 }
 .nav {
   display: none;
@@ -15,15 +34,10 @@
 .nav-btn {
   display: none;
 }
-.burger-btn {
-  background-color: transparent;
-  border: none;
-  transition: var(--transition);
-  padding: 0;
-}
 .close-btn-svg {
   display: none;
 }
+
 .burger-btn.active .burger-btn-svg {
   display: none;
   opacity: 0;
@@ -32,13 +46,28 @@
   display: inline;
   opacity: 1;
 }
-
-@media screen and (min-width: 768px) {
+@media (hover: hover) {
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  .nav-btn:hover {
+    background-color: var(--white-color);
+    border-color: var(--accent-color);
+  }
+}
+@media (min-width: 768px) {
   .header-container {
-    padding: 15px 32px;
+    padding: 18px 32px;
     display: flex;
     align-items: center;
     gap: 48.5px;
+  }
+  .header-logo-icon {
+    width: 79px;
+    height: 25px;
   }
   .nav {
     display: flex;
@@ -51,32 +80,25 @@
     gap: 16px;
     flex-wrap: wrap;
   }
-  .nav-btn {
-    display: block;
-    background-color: var(--accent-color);
-    border: none;
-    width: 119px;
-    padding: 6px 0;
-    font-weight: var(--font-md);
+  .nav-link:focus {
+    text-decoration: underline;
   }
-  .nav-btn:focus,
-  .nav-btn:hover {
+  .nav-btn {
+    width: 119px;
+    display: block;
+  }
+  .nav-btn:focus {
     background-color: var(--white-color);
-    border: 1px solid var(--accent-color);
   }
   .nav-btn:active {
     background-color: var(--accent-color);
     box-shadow: var(--btn-shadow);
   }
-  .header-logo-icon {
-    width: 84px;
-    height: 36px;
-  }
 }
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .header-container {
     display: flex;
-    padding: 15px 64px;
+    padding: 18px 64px;
     gap: 32px;
   }
   .nav {

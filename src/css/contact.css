@@ -1,8 +1,10 @@
 .contacts {
   padding: 64px 0;
 }
-.contact-caption {
-  margin-bottom: 48px;
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 .contact-subtitle {
   font-weight: var(--font-sb);
@@ -22,7 +24,11 @@
 }
 .contact {
   font-style: normal;
-  margin-bottom: 32px;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .contact-list {
   display: flex;
@@ -42,6 +48,7 @@
   margin-bottom: 8px;
 }
 .contact-link {
+  display: block;
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: var(--transition);
@@ -50,7 +57,7 @@
   text-decoration: underline;
 }
 .contact-link:active {
-  color: var(--link-activ-color);
+  color: var(--link-active-color);
 }
 .contact-form-field {
   display: flex;
@@ -59,6 +66,9 @@
   flex-direction: column;
   margin-bottom: 24px;
   gap: 24px;
+}
+.form-label-wrapper {
+  width: 100%;
 }
 .contact-form-label {
   display: inline-block;
@@ -82,7 +92,7 @@
 }
 .contact-form-input:invalid:not(:placeholder-shown) + p {
   display: block;
- color: var(--form-error-color);
+  color: var(--form-error-color);
 }
 .contact-form-input:focus {
   border: 1px solid var(--accent-color);
@@ -103,32 +113,13 @@
 .contact-form-comment::placeholder {
   color: var(--form-placeholder-color);
 }
-.form-btn {
-  text-align: center;
+.contact-btn {
   width: 100%;
-  height: 36px;
-  border: 1px solid var(--accent-color);
-  background: var(--accent-color);
-  transition: var(--transition);
-  padding: 6px;
 }
-.form-btn:focus {
-  border: 1px solid var(--accent-color);
-}
-.form-btn:active {
-  border: 1px solid var(--accent-color);
-  background: var(--accent-color);
-}
+
 @media (hover: hover) {
   .contact-link:hover {
     text-decoration-color: currentColor;
-  }
-  .form-btn:hover {
-    border: 1px solid var(--accent-color);
-    background-color: var(--white-color);
-  }
-  .form-btn:active {
-    background: var(--accent-color);
   }
 }
 @media (min-width: 768px) {
@@ -169,8 +160,7 @@
   .contact-item {
     width: calc((100% - 32px) / 2);
   }
-   .form-btn {
+  .contact-btn {
     width: 192px;
   }
 }
-
