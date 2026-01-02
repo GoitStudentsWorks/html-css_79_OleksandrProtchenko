@@ -18,7 +18,6 @@
   gap: 32px;
   align-items: flex-start;
 }
-
 .hero-title {
   font-family: var(--second-family);
   font-weight: 400;
@@ -27,16 +26,17 @@
   letter-spacing: var(--title-ls);
   color: var(--white-color);
 }
-
 .hero-text {
   font-size: 18px;
   color: var(--white-color);
 }
-
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+.hero-btn {
+  text-align: center;
 }
 @media (min-width: 768px) {
   .hero {

@@ -39,7 +39,7 @@ body:has(.modal.is-open) footer {
   visibility: hidden;
 }
 
-button {
+/* button {
   outline: transparent;
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
@@ -47,8 +47,15 @@ button {
   padding: 5px;
   transition: var(--transition);
   cursor: pointer;
-}
+} */
 .btn {
+  outline: transparent;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  font-weight: var(--font-md);
+  padding: 5px;
+  transition: var(--transition);
+  cursor: pointer;
   width: 100%;
 }
 @media (hover: hover) {

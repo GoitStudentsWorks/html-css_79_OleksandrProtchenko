@@ -84,8 +84,9 @@ header {
     text-decoration: underline;
   }
   .nav-btn {
-    width: 119px;
     display: block;
+    width: 119px;
+    text-align: center;
   }
   .nav-btn:focus {
     background-color: var(--white-color);

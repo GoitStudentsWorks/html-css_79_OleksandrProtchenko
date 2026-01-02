@@ -37,13 +37,16 @@
   color: var(--link-active-color);
   text-decoration: none;
 }
-.modal-btn:focus {
+.modal-btn {
+  text-align: center;
+}
+/* .modal-btn:focus {
   background-color: white;
 }
 .modal-btn:active {
   background-color: var(--accent-color);
   box-shadow: var(--btn-shadow);
-}
+} */
 @media (min-width: 768px) {
   .modal {
     display: none;
