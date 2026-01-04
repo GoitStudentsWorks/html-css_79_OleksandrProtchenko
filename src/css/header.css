@@ -54,7 +54,7 @@ header {
   opacity: 1;
 }
 @media (hover: hover) {
-  .nav-item:hover .nav-link {
+  .nav-link:hover {
     text-decoration-color: currentColor;
   }
 }
@@ -80,10 +80,10 @@ header {
     gap: 16px;
     flex-wrap: wrap;
   }
-  .nav-item:focus .nav-link {
+  .nav-link:focus {
     text-decoration-color: currentColor;
   }
-  .nav-item:active .nav-link {
+  .nav-link:active {
     color: var(--link-active-color);
     text-decoration: none;
   }
