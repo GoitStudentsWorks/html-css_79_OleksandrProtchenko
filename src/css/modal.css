@@ -36,10 +36,10 @@
   text-decoration-color: transparent;
   transition: text-decoration-color var(--transition), color var(--transition);
 }
-.modal-item:focus .modal-link {
+.modal-link:focus {
   text-decoration-color: currentColor;
 }
-.modal-item:active .modal-link {
+.modal-link:active {
   color: var(--link-active-color);
   text-decoration: none;
 }
@@ -47,7 +47,7 @@
   text-align: center;
 }
 @media (hover: hover) {
-  .modal-item:hover .modal-link {
+  .modal-link:hover {
     text-decoration-color: currentColor;
   }
 }
