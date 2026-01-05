@@ -31,7 +31,7 @@
   line-height: var(--small-title-lh);
   letter-spacing: var(--title-ls);
 }
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .benefits-container {
     align-items: center;
   }
